@@ -26,7 +26,7 @@ class UserModel extends User {
   UserModel.fromMap(DataMap json)
       : this(
           id: json['id'],
-          createdAt: json['created_at'],
+          createdAt: json['createdAt'],
           name: json['name'],
           avatar: json['avatar'],
         );
@@ -46,7 +46,7 @@ class UserModel extends User {
 
   DataMap toMap() => <String, dynamic>{
         'id': id,
-        'created_at': createdAt,
+        'createdAt': createdAt,
         'name': name,
         'avatar': avatar,
       };
